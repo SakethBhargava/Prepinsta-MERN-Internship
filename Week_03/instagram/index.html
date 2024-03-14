@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Profile</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="profile-header">
+      <div class="profile-avatar">
+        <img src="user.avif" alt="Profile Picture" />
+      </div>
+      <div class="profile-info">
+        <h1>Username</h1>
+        <p>Bio or description</p>
+        <ul class="profile-stats">
+          <li><strong id="postCount">0</strong> posts</li>
+          <li><strong id="followersCount">0</strong> followers</li>
+          <li><strong id="followingCount">0</strong> following</li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="container">
+      <label for="upload" class="upload-button">Upload Photo</label>
+      <input type="file" id="upload" accept="image/*" />
+    </div>
+
+    <div class="gallery" id="gallery">
+      <!-- Gallery items will be dynamically added here -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
